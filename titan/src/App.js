@@ -29,7 +29,7 @@ componentDidMount() {
   this.onChange(0)
   window.setInterval(function(){
     this.onChange(0)
-  }.bind(this), 10000);
+  }.bind(this), 15000);
 }
 
 
@@ -62,7 +62,6 @@ componentDidMount() {
     let titanika=(selectedH-nowH)/3.25;
     titanika = Math.round(titanika*100)/100;
     let titanika2 = Math.round(titanika);
-    console.log(titanika2);
     if (nowH<=selectedH) {
       let n = 0
       let titanika1 = []
